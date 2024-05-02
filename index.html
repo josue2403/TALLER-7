@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del documento HTML con el idioma español -->
+
+<head> <!-- Encabezado del documento -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <!-- Configuración de la vista en dispositivos móviles -->
+    <!-- Enlaces a recursos externos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> <!-- Enlace a la biblioteca Font Awesome para iconos -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos personalizada -->
+    <title>Login</title> <!-- Título de la página -->
+</head>  
+<body>
+    <form class="formulario"> <!-- Formulario de inicio de sesión -->
+        <img class="logo-uleam" src="img/logo.png" alt="Logo"> <!-- Imagen de logo  -->
+        <h2>Inicio de Sesión</h2>
+        <div class="contenedor"> <!-- Contenedor de los elementos del formulario -->          
+            <div class="input-contenedor">
+                <!-- Contenedor de campo de entrada de correo electrónico -->
+                <i class="fas fa-envelope icon"></i>
+                <!-- Icono de sobre de correo de Font Awesome -->
+                <input type="email" placeholder="Correo Electronico" required>
+                <!-- Campo de entrada de correo electrónico -->
+            </div>
+
+            <div class="input-contenedor">
+                <!-- Contenedor de campo de entrada de contraseña -->
+                <i class="fas fa-key icon"></i>
+                <!-- Icono de llave de Font Awesome -->
+                <input type="password" placeholder="Contraseña" required>
+                <!-- Campo de entrada de contraseña -->
+            </div>
+            <input type="submit" value="Iniciar Sesión" class="button">
+            <!-- Botón de envío del formulario -->
+            <p>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </a></p>
+            <!-- Mensaje de registro y enlace a la página de registro -->
+        </div>
+    </form>
+</body>
+</html>

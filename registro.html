@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!-- Encabezado del documento -->
+    <meta charset="UTF-8"> 
+    <title>Registrarse</title> <!-- Título de la página -->
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <!-- Configuración de la vista en dispositivos móviles -->
+
+    <!-- Enlaces a recursos externos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Enlace a la biblioteca Font Awesome para iconos -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos personalizada -->
+</head>  
+<body>
+    <form class="formulario" id="registroForm"> <!-- Formulario de registro-->
+        <img class="logo-uleam" src="img/logo.png" alt="Logo"> <!-- Imagen de logo -->
+        <h2>Registro de Usuario</h2>
+        <div class="contenedor"><!-- Contenedor de los elementos del formulario -->
+            <div class="input-contenedor">
+                <!-- Contenedor de campo de entrada de nombre completo -->
+                <i class="fas fa-user icon"></i> <!-- Icono de usuario de Font Awesome -->
+                <input type="text" placeholder="Nombre Completo" required>
+                <!-- Campo de entrada de nombre completo -->
+            </div>
+            <div class="input-contenedor">
+                <!-- Contenedor de campo de entrada de correo electrónico -->
+                <i class="fas fa-envelope icon"></i> <!-- Icono de sobre de correo de Font Awesome -->
+                <input type="email" placeholder="Correo Electronico" required>
+                <!-- Campo de entrada de correo electrónico -->
+            </div>
+            <div class="input-contenedor">
+                <!-- Contenedor de campo de entrada de contraseña -->
+                <i class="fas fa-key icon"></i> <!-- Icono de llave de Font Awesome -->
+                <input type="password" placeholder="Contraseña" required>
+                <!-- Campo de entrada de contraseña -->
+            </div>
+            <input type="submit" value="Registrarse" class="button">
+            <!-- Botón de envío del formulario -->
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <!-- Texto de acuerdo de usuario -->
+            <p>¿Ya tienes una cuenta?<a class="link" href="index.html">Iniciar Sesion</a></p>
+            <!-- Enlace a la página de inicio de sesión -->
+        </div>
+    </form>
+
+    <div id="mensajeRegistroExitoso">¡Registro exitoso!</div>
+    <!-- Div para mostrar mensaje de registro exitoso -->
+
+    <script src="index.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

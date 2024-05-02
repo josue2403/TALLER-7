@@ -1,0 +1,131 @@
+/* Establece el estilo para el cuerpo del documento */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente del texto */
+    background: url(/img/entrada.jpg); /* Establece la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+/* Aplica estilos generales a todos los elementos del documento */
+* {
+    box-sizing: border-box; /* Establece el modelo de caja */
+}
+
+/* Establece estilos para el contenedor principal */
+.contenedor {
+    width: 100%; /* Define el ancho máximo */
+    padding: 15px; /* Agrega espacio de relleno */
+    max-width: 1000px; /* Establece el ancho máximo */
+}
+
+/* Establece estilos para el formulario */
+.formulario {
+    background: #fff; /* Color de fondo */
+    margin-top: 150px; /* Margen superior */
+    padding: 3px; /* Espacio de relleno */
+}
+
+/* Establece estilos para los encabezados h2 */
+h2 {
+    text-align: center; /* Alineación central */
+    color: #329977; /* Color del texto */
+    font-size: 27px; /* Tamaño de la fuente */
+    margin: 3px auto; /* Ajusta el margen */
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente */
+}
+
+/* Establece estilos para el logo */
+.logo-uleam {
+    display: block; /* Muestra como bloque */
+    margin: 50px auto; /* Ajusta el margen */
+    width: 50px; /* Ancho del logo */
+    height: auto; /* Altura automática */
+    transform: scale(6); /* Escala el tamaño */
+}
+
+/* Establece estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 20px; /* Tamaño de la fuente */
+    width: 82%; /* Ancho del campo */
+    padding: 10px; /* Espacio de relleno */
+    border: none; /* Sin borde */
+}
+
+/* Establece estilos para los contenedores de entrada */
+.input-contenedor {
+    margin-bottom: 20px; /* Margen inferior */
+    border: 1px solid #aaa; /* Borde */
+    border-radius: 15px; /* Radio del borde */
+}
+
+/* Establece estilos para los iconos dentro de los contenedores de entrada */
+.icon {
+    min-width: 50px; /* Ancho mínimo */
+    text-align: center; /* Alineación */
+    color: #999; /* Color del icono */
+}
+
+/* Establece estilos para los botones */
+.button {
+    border: none; /* Sin borde */
+    width: 100%; /* Ancho completo */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    background: #329977; /* Color de fondo */
+    padding: 15px 20px; /* Espacio de relleno */
+    border-radius: 20px; /* Radio del borde */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Establece estilos cuando el cursor está sobre el botón */
+.button:hover {
+    background: #265a49; /* Color de fondo al pasar el ratón */
+}
+
+/* Establece estilos para los párrafos */
+p {
+    text-align: center; /* Alineación */
+}
+
+/* Establece estilos para los enlaces */
+.link {
+    color: #329977; /* Color del texto */
+    font-weight: 600; /* Grosor de la fuente */
+    text-decoration: underline; /* Subrayado */
+    padding: 5px; /* Espacio de relleno */
+}
+
+/* Establece estilos para los enlaces cuando el cursor está sobre ellos */
+.link:hover {
+    color: rgb(95, 106, 209); /* Color del texto al pasar el ratón */
+}
+
+/* Establece estilos específicos para pantallas más grandes */
+@media(min-width:768px) {
+    .formulario {
+        margin: auto; /* Margen automático */
+        width: 500px; /* Ancho fijo */
+        margin-top: 150px; /* Margen superior */
+        border-radius: 2%; /* Radio del borde */
+    }
+}
+
+/* Establece estilos para el mensaje de registro exitoso */
+#mensajeRegistroExitoso {
+    position: fixed; /* Posición fija */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    background-color: white; /* Color de fondo */
+    color: green; /* Color del texto */
+    padding: 15px; /* Espacio de relleno */
+    border-radius: 5px; /* Radio del borde */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: none; /* Ocultar inicialmente */
+    font-size: 18px; /* Tamaño de la fuente */
+}
